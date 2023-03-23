@@ -4995,6 +4995,14 @@
       "url": "https://purpleport.com/portfolio/{username}/",
       "valid": "response.status == 200 and 'Joined ' in responseContent"
     },
+        {
+      "app": "Twitch",
+      "id": 1,
+      "method": "GET",
+      "url": "https://www.twitch.tv/{username}",
+      "valid": "response.status == 200"
+    }
+    ,
     {
       "app": "Pixieset",
       "id": 581,
