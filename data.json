@@ -5002,5 +5002,41 @@
       "url": "https://{username}.mypixieset.com/",
       "valid": "response.status == 200 and 'cannot be found' not in responseContent"
     }
+     },
+        {
+      "app": "Twitch",
+      "id": 582,
+      "method": "GET",
+      "url": "https://www.twitch.com/{username}",
+      "valid": "response.status == 200 and 'USER PROFILE' in responseContent"
+    },
+        {
+      "app": "Steam",
+      "id": 583,
+      "method": "GET",
+      "url": "https://steamcommunity.com/id/{username}",
+      "valid": "response.status == 200 and 'USER PROFILE' in responseContent"
+    },
+        {
+      "app": "Mixcloud",
+      "id": 584,
+      "method": "GET",
+      "url": "https://www.mixcloud.com/{username}",
+      "valid": "response.status == 200 and 'USER PROFILE' in responseContent"
+    },
+        {
+      "app": "DeviantArt",
+      "id": 585,
+      "method": "GET",
+      "url": "https://www.deviantart.com/{username}",
+      "valid": "response.status == 200 and 'USER PROFILE' in responseContent"
+    },
+        {
+      "app": "Goodreads",
+      "id": 586,
+      "method": "GET",
+      "url": "https://www.goodreads.com/{username}",
+      "valid": "response.status == 200 and 'USER PROFILE' in responseContent"
+    }
   ]
 }
